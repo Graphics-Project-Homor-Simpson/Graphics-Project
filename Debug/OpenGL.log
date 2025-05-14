@@ -1,84 +1,89 @@
 ﻿  new.cpp
 C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(21,17): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(79,22): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
 C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(80,22): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(86,43): warning C4305: '=': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(81,22): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
 C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(87,43): warning C4305: '=': 'double'에서 'float'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(101,25): warning C4305: '-=': 'double'에서 'float'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(102,49): warning C4305: '=': 'double'에서 'float'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(107,25): warning C4305: '+=': 'double'에서 'float'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(122,22): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(122,14): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(123,20): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(132,25): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(132,18): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(133,24): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(133,19): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(133,14): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(134,24): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(134,18): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(143,24): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(143,18): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(88,43): warning C4305: '=': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(102,25): warning C4305: '-=': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(103,49): warning C4305: '=': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(108,25): warning C4305: '+=': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(123,22): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(123,14): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(124,20): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(133,25): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(133,18): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(134,24): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(134,19): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(134,14): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(135,24): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(135,18): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
 C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(144,24): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(144,19): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(144,14): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(145,24): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(145,18): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(151,25): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(151,20): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(151,15): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(155,31): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(155,25): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(155,18): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(156,24): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(156,19): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(156,14): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(160,23): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(161,19): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(161,14): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(168,21): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(169,14): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(172,20): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(176,28): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(177,25): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(177,14): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(188,30): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(188,23): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(192,19): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(192,14): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(193,26): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(201,25): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(201,20): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(201,15): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(205,31): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(205,25): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(205,19): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(206,24): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(144,18): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(145,24): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(145,19): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(145,14): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(146,24): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(146,18): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(152,25): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(152,20): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(152,15): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(156,31): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(156,25): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(156,18): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(157,24): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(157,19): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(157,14): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(161,23): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(162,19): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(162,14): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(169,21): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(170,14): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(173,20): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(177,28): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(178,25): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(178,14): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(189,30): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(189,23): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(193,19): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(193,14): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(194,26): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(202,25): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(202,20): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(202,15): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(206,31): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(206,25): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
 C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(206,19): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(206,14): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(210,23): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(211,19): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(211,14): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(218,21): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(219,14): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(222,20): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(226,28): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(227,25): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(227,14): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(238,30): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(238,23): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(242,19): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(242,14): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(243,26): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(254,20): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(207,24): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(207,19): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(207,14): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(211,23): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(212,19): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(212,14): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(219,21): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(220,14): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(223,20): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(227,28): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(228,25): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(228,14): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(239,30): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(239,23): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(243,19): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(243,14): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(244,26): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
 C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(255,20): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(261,23): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(285,21): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(350,21): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(360,20): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(256,20): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(262,23): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(286,21): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(318,17): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(319,17): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(335,17): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(336,17): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(346,22): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(351,21): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
 C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(361,20): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(367,25): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(389,21): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(410,19): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(424,21): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(362,20): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(368,25): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(390,21): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(411,19): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(425,21): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   OpenGL.vcxproj -> C:\Users\HUMAN\source\repos\GraphicsClone\Debug\OpenGL.exe

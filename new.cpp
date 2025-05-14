@@ -29,6 +29,7 @@ void drawHalfSphere(float radius, int slices, int stacks);
 void drawCylinder(float radius, float height, int segments);
 void drawHalfCapsule(float radius, float height, int slices, int stacks);
 void drawHalfCircle(float radius, float y, int slices);
+void drawingCube();
 
 // Camera ---------------------------------------------------------------------------
 void updateCameraSpace() {
@@ -159,7 +160,7 @@ void legPart() {
     glPushMatrix();
     glTranslatef(0.0, 0.1, 0.0);
     glScalef(1.1, 1.6, 1.0);
-    glutSolidCube(0.5);
+    drawingCube();
     glPopMatrix();
 
     //구두앞부분
@@ -209,7 +210,7 @@ void legPart() {
     glPushMatrix();
     glTranslatef(0.0, 0.1, 0.0);
     glScalef(1.1, 1.6, 1.0);
-    glutSolidCube(0.5);
+    drawingCube();
     glPopMatrix();
 
     //구두앞부분
@@ -251,8 +252,8 @@ void legPart() {
 // Half Sphere --------------------------------------------------------------------
 void drawHalfSphere(float radius, int slices, int stacks) {
     for (int i = 0; i <= stacks / 2; ++i) {
-        float lat0 = PI * (-0.5f + (float)i / stacks);
-        float lat1 = PI * (-0.5f + (float)(i + 1) / stacks);
+        float lat0 = PI * (-0.5 + (float)i / stacks);
+        float lat1 = PI * (-0.5 + (float)(i + 1) / stacks);
         float y0 = sinf(lat0), y1 = sinf(lat1);
         float r0 = cosf(lat0), r1 = cosf(lat1);
 
@@ -282,57 +283,57 @@ void drawHalfSphere(float radius, int slices, int stacks) {
 
 // Cylinder ------------------------------------------------------------------------
 void drawCylinder(float radius, float height, int segments) {
-    float angleStep = 2.0f * PI / segments;
+    float angleStep = 2.0 * PI / segments;
 
     // 옆면
     glBegin(GL_QUAD_STRIP);
     for (int i = 0; i <= segments; ++i) {
         float angle = i * angleStep;
         float x = cosf(angle), z = sinf(angle);
-        float u = (float)i / segments;      // 0.0 ~ 1.0
+        float u = (float)i / segments;      
 
-        glNormal3f(x, 0.0f, z);
+        glNormal3f(x, 0.0, z);
 
         // 아래 vertex (v = 0.0)
-        glTexCoord2f(u, 0.0f);
-        glVertex3f(radius * x, 0.0f, radius * z);
+        glTexCoord2f(u, 0.0);
+        glVertex3f(radius * x, 0.0, radius * z);
 
         // 위 vetex (v = 1.0)
-        glTexCoord2f(u, 1.0f);
+        glTexCoord2f(u, 1.0);
         glVertex3f(radius * x, height, radius * z);
     }
     glEnd();
 
     // 아래 바닥
     glBegin(GL_TRIANGLE_FAN);
-    glNormal3f(0.0f, -1.0f, 0.0f);
+    glNormal3f(0.0, -1.0, 0.0);
     // 중앙점에 (0.5,0.5)
-    glTexCoord2f(0.5f, 0.5f);
-    glVertex3f(0.0f, 0.0f, 0.0f);
+    glTexCoord2f(0.5, 0.5);
+    glVertex3f(0.0, 0.0, 0.0);
 
     for (int i = 0; i <= segments; ++i) {
         float angle = i * angleStep;
         float x = cosf(angle), z = sinf(angle);
         // 원판에 (u,v) = (0.5 + 0.5*x, 0.5 + 0.5*z)로 계산하게 한다. 
-        float u = 0.5f + 0.5f * x;
-        float v = 0.5f + 0.5f * z;
+        float u = 0.5 + 0.5 * x;
+        float v = 0.5 + 0.5 * z;
         glTexCoord2f(u, v);
-        glVertex3f(radius * x, 0.0f, radius * z);
+        glVertex3f(radius * x, 0.0, radius * z);
     }
     glEnd();
 
     // 위 바닥
     glBegin(GL_TRIANGLE_FAN);
-    glNormal3f(0.0f, 1.0f, 0.0f);
+    glNormal3f(0.0, 1.0, 0.0);
     // 중앙점
-    glTexCoord2f(0.5f, 0.5f);
-    glVertex3f(0.0f, height, 0.0f);
+    glTexCoord2f(0.5, 0.5);
+    glVertex3f(0.0, height, 0.0);
 
     for (int i = 0; i <= segments; ++i) {
         float angle = -i * angleStep;  // 시계 반대 방향
         float x = cosf(angle), z = sinf(angle);
-        float u = 0.5f + 0.5f * x;
-        float v = 0.5f + 0.5f * z;
+        float u = 0.5 + 0.5 * x;
+        float v = 0.5 + 0.5 * z;
         glTexCoord2f(u, v);
         glVertex3f(radius * x, height, radius * z);
     }
@@ -342,16 +343,16 @@ void drawCylinder(float radius, float height, int segments) {
 // Half_Capsule ----------------------------------------------------------------------
 void drawHalfCapsule(float radius, float height, int slices, int stacks) {
 
-    float halfH = height * 0.5f;
+    float halfHeight = height * 0.5;
 
     // 1) 실린더 반쪽 곡면
     glBegin(GL_QUAD_STRIP);
     for (int j = 0; j <= slices; ++j) {
-        float theta = PI * j / slices;            // 0..PI (반원)
+        float theta = PI * j / slices;            
         float cx = cosf(theta), cz = sinf(theta);
         glNormal3f(cx, 0, cz);
-        glVertex3f(radius * cx, -halfH, radius * cz);
-        glVertex3f(radius * cx, halfH, radius * cz);
+        glVertex3f(radius * cx, -halfHeight, radius * cz);
+        glVertex3f(radius * cx, halfHeight, radius * cz);
     }
     glEnd();
 
@@ -369,11 +370,11 @@ void drawHalfCapsule(float radius, float height, int slices, int stacks) {
 
             // 아래 줄 (접점)
             glNormal3f(r0 * cx, y0, r0 * cz);
-            glVertex3f(radius * r0 * cx, halfH + radius * y0, radius * r0 * cz);
+            glVertex3f(radius * r0 * cx, halfHeight + radius * y0, radius * r0 * cz);
 
             // 위 줄
             glNormal3f(r1 * cx, y1, r1 * cz);
-            glVertex3f(radius * r1 * cx, halfH + radius * y1, radius * r1 * cz);
+            glVertex3f(radius * r1 * cx, halfHeight + radius * y1, radius * r1 * cz);
         }
         glEnd();
     }
@@ -382,33 +383,33 @@ void drawHalfCapsule(float radius, float height, int slices, int stacks) {
     glBegin(GL_TRIANGLE_FAN);
     glNormal3f(0, -1, 0);
     // 중앙점
-    glVertex3f(0, -halfH, 0);
+    glVertex3f(0, -halfHeight, 0);
 
     // 
     for (int j = 0; j <= slices; ++j) {
         float theta = PI * j / slices;
         float x = radius * cosf(theta);
         float z = radius * sinf(theta);
-        glVertex3f(x, -halfH, z);
+        glVertex3f(x, -halfHeight, z);
     }
     glEnd();
 
     // 실린더 단면
     glBegin(GL_QUAD_STRIP);
     glNormal3f(-1, 0, 0);
-    glVertex3f(0, -halfH, 0);
-    glVertex3f(0, halfH, 0);
-    glVertex3f(0, -halfH, radius);
-    glVertex3f(0, halfH, radius);
+    glVertex3f(0, -halfHeight, 0);
+    glVertex3f(0, halfHeight, 0);
+    glVertex3f(0, -halfHeight, radius);
+    glVertex3f(0, halfHeight, radius);
     glEnd();
 
     // 원판 단면
     glBegin(GL_TRIANGLE_FAN);
     glNormal3f(-1, 0, 0);
-    glVertex3f(0, -halfH, 0);
+    glVertex3f(0, -halfHeight, 0);
     for (int j = 0; j <= stacks; ++j) {
         float phi = (PI / 2) * (stacks - j) / stacks;
-        float y = -halfH + radius * sinf(phi);
+        float y = -halfHeight + radius * sinf(phi);
         float r = radius * cosf(phi);
         glVertex3f(0, y, r);
     }
@@ -417,7 +418,7 @@ void drawHalfCapsule(float radius, float height, int slices, int stacks) {
 
 // HalfCircle -------------------------------------------------------
 void drawHalfCircle(float radius, float y, int slices) {
-    glNormal3f(0.0f, 1.0f, 0.0f);
+    glNormal3f(0.0, 1.0, 0.0);
 
     glBegin(GL_TRIANGLE_STRIP);
     for (int i = 0; i <= slices; ++i) {
@@ -425,9 +426,49 @@ void drawHalfCircle(float radius, float y, int slices) {
         float x = radius * cosf(theta);
         float z = radius * sinf(theta);
 
-        glVertex3f(0.0f, y, 0.0f);
+        glVertex3f(0.0, y, 0.0);
         glVertex3f(x, y, z);
     }
+    glEnd();
+}
+//Cube ----------------------------------------------------------------
+void drawingCube() {
+    glBegin(GL_QUADS);
+    glNormal3f(0.0, 0.0, 1.0);
+    glVertex3f(-0.25, -0.25, 0.25);
+    glVertex3f(0.25, -0.25, 0.25);
+    glVertex3f(0.25, 0.25, 0.25);
+    glVertex3f(-0.25, 0.25, 0.25);
+
+    glNormal3f(0.0, 0.0, -1.0);
+    glVertex3f(0.25, -0.25, -0.25);
+    glVertex3f(-0.25, -0.25, -0.25);
+    glVertex3f(-0.25, 0.25, -0.25);
+    glVertex3f(0.25, 0.25, -0.25);
+
+    glNormal3f(-1.0, 0.0, 0.0);
+    glVertex3f(-0.25, -0.25, -0.25);
+    glVertex3f(-0.25, -0.25, 0.25);
+    glVertex3f(-0.25, 0.25, 0.25);
+    glVertex3f(-0.25, 0.25, -0.25);
+
+    glNormal3f(1.0, 0.0, 0.0);
+    glVertex3f(0.25, -0.25, 0.25);
+    glVertex3f(0.25, -0.25, -0.25);
+    glVertex3f(0.25, 0.25, -0.25);
+    glVertex3f(0.25, 0.25, 0.25);
+
+    glNormal3f(0.0, 1.0, 0.0);
+    glVertex3f(-0.25, 0.25, 0.25);
+    glVertex3f(0.25, 0.25, 0.25);
+    glVertex3f(0.25, 0.25, -0.25);
+    glVertex3f(-0.25, 0.25, -0.25);
+
+    glNormal3f(0.0, -1.0, 0.0);
+    glVertex3f(-0.25, -0.25, -0.25);
+    glVertex3f(0.25, -0.25, -0.25);
+    glVertex3f(0.25, -0.25, 0.25);
+    glVertex3f(-0.25, -0.25, 0.25);
     glEnd();
 }
 
