@@ -1,2 +1,13 @@
 ﻿  new.cpp
-  OpenGL.vcxproj -> C:\Users\HUMAN\source\repos\OpenGL\Debug\OpenGL.exe
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(13,17): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(82,22): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(83,22): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(89,43): warning C4305: '=': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(90,43): warning C4305: '=': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(104,25): warning C4305: '-=': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(105,49): warning C4305: '=': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(110,25): warning C4305: '+=': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(120,18): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\HUMAN\Documents\GitHub\Graphics-Project\new.cpp(125,21): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  LINK : C:\Users\HUMAN\source\repos\GraphicsClone\Debug\OpenGL.exe을(를) 찾을 수 없거나 마지막 증분 링크에 의해 빌드되지 않았습니다. 전체 링크를 수행하고 있습니다.
+  OpenGL.vcxproj -> C:\Users\HUMAN\source\repos\GraphicsClone\Debug\OpenGL.exe
