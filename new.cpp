@@ -11,6 +11,8 @@
 #include <mmsystem.h>
 #pragma comment(lib,"winmm.lib")
 
+#define DOH_SOUND_PATH "doh.wav"
+
 
 #define PI 3.14159265358979323846
 #define NUM_TEXTURES 3
@@ -965,6 +967,38 @@ void inputMouse(int button, int state, int x, int y)
         mouseX = x;
         mouseY = y;
         isDragging = true;  // 드래그 시작
+
+        // 뷰포트 및 행렬 정보
+        GLint viewport[4];
+        GLdouble modelview[16], projection[16];
+        GLfloat winX, winY, winZ;
+        GLdouble posX, posY, posZ;
+
+        glGetDoublev(GL_MODELVIEW_MATRIX, modelview);
+        glGetDoublev(GL_PROJECTION_MATRIX, projection);
+        glGetIntegerv(GL_VIEWPORT, viewport);
+
+        winX = (float)x;
+        winY = (float)(viewport[3] - y);  // OpenGL은 좌표계가 뒤집힘
+        glReadPixels(x, int(winY), 1, 1, GL_DEPTH_COMPONENT, GL_FLOAT, &winZ);
+
+        gluUnProject(winX, winY, winZ, modelview, projection, viewport, &posX, &posY, &posZ);
+
+        // 💡 [몸통 영역 판정]
+        // 몸통 중심 기준: (0, -0.6, 0), 높이 1.2f
+        // 대략 반지름 0.5f 내외
+        float bodyCenterY = -0.8f;
+        float bodyTopY = bodyCenterY + 1.8f;
+
+        bool inX = fabs(posX) < 0.7f;
+        bool inY = posY > bodyCenterY && posY < bodyTopY;
+        bool inZ = fabs(posZ) < 0.7f;
+
+        if (inX && inY && inZ) {
+            PlaySound(TEXT("doh.wav"), NULL, SND_ASYNC);
+            std::cout << "몸통 클릭됨! 도! 사운드 재생됨!" << std::endl;
+        }
+
     }
     else isDragging = false; // 드래그 종료
 }
@@ -1078,7 +1112,11 @@ int main(int argc, char** argv) {
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
 
-    PlaySound(TEXT("SimpsonBGM.wav"), NULL, SND_ASYNC | SND_LOOP);
+    /*PlaySound(TEXT("SimpsonBGM.wav"), NULL, SND_ASYNC | SND_LOOP);*/
+
+    mciSendString(L"open \"SimpsonBGM.wav\" type mpegvideo alias bgm", NULL, 0, NULL);
+    mciSendString(L"play bgm repeat", NULL, 0, NULL);
+
     glutMainLoop();
 
 
