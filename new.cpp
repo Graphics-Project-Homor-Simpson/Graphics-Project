@@ -5,6 +5,13 @@
 #include <cmath>
 #include <iostream>
 
+//사운드 라이브러리
+#include <Windows.h>
+#include <conio.h>
+#include <mmsystem.h>
+#pragma comment(lib,"winmm.lib")
+
+
 #define PI 3.14159265358979323846
 #define NUM_TEXTURES 3
 
@@ -665,21 +672,24 @@ void drawFullArm(bool isLeft) {
 
 // ------------------- Head -------------------
 void drawHead() {
+    float neckExtension = 0.3f;
+
+    // [1] 목 포함 기둥
     glPushMatrix();
+    glTranslatef(0.0f, -neckExtension, 0.0f);
     glRotatef(-90.0f, 1.0f, 0.0f, 0.0f);
     glColor3f(0.967f, 0.791f, 0.056f);
-    gluCylinder(quad, head_radius, head_radius, head_height, 40, 40);
-    gluDisk(quad, 0.0f, head_radius, 40, 1);
+    gluCylinder(quad, head_radius, head_radius, head_height + neckExtension, 40, 40);
+    gluDisk(quad, 0.0f, head_radius, 40, 1);  // 밑바닥
     glPopMatrix();
 
+    // [2] 머리 위 반구
     glPushMatrix();
-    glTranslatef(0.0f, head_height, 0.0f);
+    glTranslatef(0.0f, head_height, 0.0f);  // 기존 위치 그대로 유지
     glColor3f(0.967f, 0.791f, 0.056f);
     glutSolidSphere(head_radius, 40, 40);
     glPopMatrix();
 }
-
-
 
 void drawPupilSphere(float radius) {
     glutSolidSphere(radius, 16, 16); // 간단한 구체
@@ -1043,7 +1053,7 @@ int main(int argc, char** argv) {
     //기본 함수
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
-    
+
     glutInitWindowSize(1280, 720);
     glutInitWindowPosition(0, 0);
     glutCreateWindow("Homer Simpson");
@@ -1057,15 +1067,19 @@ int main(int argc, char** argv) {
     //마우스 입력 && 드래깅
     glutMouseFunc(inputMouse);
     glutMotionFunc(dragMouse);
- 
+
     // 마우스 줌인 줌아웃
     glutMouseWheelFunc(mouseWheel);
 
-    //키보드 입력 ( 줌 인 / 줌 아웃)'
+    //키보드 입력 ( 줌 인 / 줌 아웃)
     glutKeyboardFunc(inputKeyboard);
 
     glClearColor(0.529, 0.808, 0.922, 1.0);
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
+
+    PlaySound(TEXT("SimpsonBGM.wav"), NULL, SND_ASYNC | SND_LOOP);
     glutMainLoop();
+
+
 }
