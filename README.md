@@ -18,3 +18,8 @@
 git clone https://github.com/your-org/homer-opengl.git
 cd homer-opengl
 # Visual Studio로 열거나 cmake build
+```
+
+## 🎨 실행화면
+
+![image](https://github.com/user-attachments/assets/f38b27a3-7275-4856-8f6a-05f765884f4c)
